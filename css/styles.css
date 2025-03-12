@@ -1,0 +1,105 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', monospace;
+}
+
+body {
+    background-color: var(--Grey-900);
+    color: var(--White);
+    font-size: 14px;
+}
+
+main .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main .content #profileCard {
+    background-color: var(--Grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+    padding: 40px 35px;
+    border-radius: 15px;
+}
+
+main .content #profileCard .card-img {
+    width: 100%;
+    height: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50px;
+}
+
+main .content #profileCard .card-identity h1 {
+    font-weight: 400;
+    font-size: clamp(1.1rem, 1.5rem, 1.7rem);
+    margin-bottom: 0;
+}
+
+main .content #profileCard .card-identity p {
+    color: var(--Green);
+    font-weight: 600;
+    font-size: clamp(0.7rem, 0.8rem, 0.9rem);
+}
+
+main .content #profileCard .card-quote {
+    margin-bottom: 25px;
+    font-size: clamp(0.7rem, 0.8rem, 0.9rem);
+}
+
+main .content #profileCard .card-identity, .card-quote {
+    text-align: center;
+}
+
+main .content #profileCard .card-button {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin: 0;
+}
+
+main .content #profileCard .card-button button {
+    background-color: var(--Grey-700);
+    color: var(--White);
+    border: none;        
+    border-radius: 5px;
+    cursor: pointer;    
+    transition: all 0.3s ease; 
+    font-weight: 700;
+    padding: 15px 0;
+    font-size: clamp(0.7rem, 0.8rem, 0.9rem);
+}
+
+main .content #profileCard .card-button button:hover, main .content #profileCard .card-button button:focus {
+    background-color: var(--Green);
+    color: var(--Grey-700);
+}
+
+footer .attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+footer .attribution a { 
+    color: var(--Green); 
+}
+
+@media screen and (max-width: 376px) {
+    main .content #profileCard {
+        padding: 20px 30px;
+    }
+}
