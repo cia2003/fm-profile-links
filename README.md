@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/cia2003/fm-profile-links)
-- Live Site URL: (https://your-live-site-url.com)
+- Live Site URL: (https://cia2003.github.io/fm-profile-links/)
 
 ## My process
 
